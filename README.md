@@ -13,3 +13,6 @@ The maximum length of `Span<T>` is the maximum length of `int`, so files larger 
 
 ## Caution
 Exception handling has not been done yet. Caution is required when using. 
+
+## License
+MIT License
