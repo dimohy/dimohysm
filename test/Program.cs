@@ -13,15 +13,15 @@ namespace Dimohysm.Test
             CreateTempFile(filename);
 
             using var mmfSpan = FileMemory.Connect(filename);
-            var span = mmfSpan.AsReadOnlyBytes();
+            var fileMemorySpan = mmfSpan.AsReadOnlyBytes();
             var sum = 0L;
 
             var sw = Stopwatch.StartNew();
             for (var count = 1; count <= 100; count++)
             {
-                for (var i = 0; i < span.Length; i++)
+                for (var i = 0; i < fileMemorySpan.Length; i++)
                 {
-                    sum += span[i];
+                    sum += fileMemorySpan[i];
                 }
                 Console.WriteLine($"Count: {count}");
             }
