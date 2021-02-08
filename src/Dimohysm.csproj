@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Version>0.1.0</Version>
+    <Authors>dimohy</Authors>
+    <Company>dimohy</Company>
+    <Product>FileMemory</Product>
+    <Description>FileMemory allows file data to be accessed as Span&lt;byte&gt; without additional allocation of heap memory. This is useful when working with large file data.</Description>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/dimohy/dimohysm</PackageProjectUrl>
+    <PackageIcon>www.tagsmaker.com_0eu70.png</PackageIcon>
+    <RepositoryUrl>https://github.com/dimohy/dimohysm</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageId>Dimohysm.FileMemory</PackageId>
+    <PackageTags>File, Span, MemoryMappedFile</PackageTags>
+    <PackageReleaseNotes>First release. Use it after enough testing.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\www.tagsmaker.com_0eu70.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
