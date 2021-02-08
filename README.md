@@ -3,8 +3,8 @@
 
 ## How to use
 ```csharp
-            using var mmfSpan = FileMemory.Connect(filename);
-            var fileMemorySpan = mmfSpan.AsReadOnlyBytes();
+            using var fileMemory = FileMemory.Connect(filename);
+            var fileMemorySpan = fileMemory.AsReadOnlyBytes();
 ```
 After connecting the file with `FileMemory.Connect(filename)`, use `AsReadonlyBytes()` or `AsBytes()` to access the file in the form of `ReadonlySpan<byte>` or `Span<byte>` as memory. can.
 When you are done using it, you need to disconnect it with `Dispose()`. 
