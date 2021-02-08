@@ -1,1 +1,0 @@
-dotnet nuget push .\Dimohysm.FileMemory.0.1.0.nupkg --api-key oy2fpzmfoutm3fktciuq4tqofp74hkuufcb36j7kes7xnm --source https://api.nuget.org/v3/index.json
