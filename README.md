@@ -4,7 +4,7 @@
 ## How to use
 ```csharp
 using var fileMemory = FileMemory.Connect(filename);
-var fileMemorySpan = fileMemory.AsReadOnlyBytes();
+var fileMemorySpan = fileMemory.AsReadonlyBytes();
 ```
 After connecting the file with `FileMemory.Connect(filename)`, use `AsReadonlyBytes()` or `AsBytes()` to access the file of type `ReadonlySpan<byte>` or `Span<byte>` as memory can do. When you're done using it, you need to disconnect it with Dispose().
 
